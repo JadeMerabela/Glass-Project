@@ -1,0 +1,220 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    @import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+    font-family: 'Pangolin', cursive;
+}
+main{
+    min-height: 100vh;
+    background: linear-gradient(to right top, #5d6d7c, #6a7a83);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.glass{
+    background: #f4f0ec;
+    min-height: 85vh;
+    width: 65%;
+    background: linear-gradient(to right bottom, rgba(242, 239,226, 0.7),rgba(242, 239,226, 0.3) );
+    border-radius: 5rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+}
+.circle1, .circle2{
+    background: #f2efe2;
+    background: linear-gradient(to right bottom, rgba(242, 239,226, 0.9),rgba(242, 239,226, 0.1) );
+    width: 15rem;
+    height:15rem;
+    border-radius: 50%;
+    position: absolute;
+}
+.circle1{
+    top: 2%;
+    right:9%;
+}
+.circle2{
+    bottom: 2%;
+    left:9%;
+}
+
+.me img {
+    height: 12vh;
+    width: 12wh;
+    border-radius: 50%;
+}
+.me p{
+    margin-bottom: 1rem;
+}
+.dashboard{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    border-radius: 5rem;
+    background: linear-gradient(to right bottom, rgba(242, 239,226, 0.6),rgba(242, 239,226, 0.2) );
+}
+h1{
+    font-weight: 600;
+    font-size: 2.2rem;
+    opacity: 0.8;
+    color: #272e35;
+    margin: 0 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+h3{
+    font-size: 1rem;
+    color: #272e35;
+}
+p{
+    font-size: 0.8rem;
+    color: #3e4b56;
+}
+h2{
+    font-size: 1.5rem;
+    color: #3e4b57;
+}
+
+.bar{
+   flex: 2;
+   margin: 1rem;
+}
+#name {
+    font-size: 1.1rem;
+}
+.icon img{  
+    height: 6.5vh;
+    width: 6.5wh;
+    margin: 0.5rem auto 0.5rem auto;
+}
+.icon{
+    margin: 1rem 1rem;
+    padding: 0rem 2rem;
+}
+.icon h3{
+    margin: 0 1rem;
+}
+
+.intro button{
+    background: #e3a765;
+    border: none;
+    border-radius: 1rem 0 1rem 0;
+    padding: 0.9rem 1.5rem 0.9rem 1.5rem;
+    margin: 0.7rem 4rem 0 4rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
+    z-index: 1;
+    color: black;
+    text-transform: uppercase;
+}
+.intro button:hover{
+    color: white;
+}
+.title {
+    margin: 8rem 0rem 3rem 6rem;
+}
+.lang {
+    display: flex;
+    margin: 1rem;
+    background: linear-gradient(to left top, rgba(242, 239,226, 0.6),rgba(242, 239,226, 0.2));
+    padding: 2.5rem;
+    border-radius: 1rem;
+    justify-content: space-evenly;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
+}
+.language{
+    margin: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+}
+
+.lang-info{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.4rem;
+    justify-content: space-between;
+}
+.percent{
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(to right top,rgba(242, 239,226, 0.6),rgba(242, 239,226, 0.2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent ;
+}
+.lang p{
+    display: flex;
+    justify-content: space-evenly;
+}
+#tml{
+    width: 90%;
+    margin-left: 1rem;
+    margin-right: 8rem;
+    
+}
+#css{
+    width: 99%;
+    margin-right: 17rem;
+}
+#js{
+    width: 99%;
+    margin-right: 17rem;
+}
+.prog {
+    background: linear-gradient(to right top,#5d6d7c, rgb(228, 226, 226));
+    width:100%;
+    height: 25%;
+    border-radius: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    padding: 0.7rem;
+}
+.prog::after {
+    content:"";
+    width:100%;
+    height: 100%;
+    background: rgb(236, 236, 236);
+    position: absolute;
+    left: 80%;
+}
+.css {
+    background: linear-gradient(to right top,#5d6d7c, rgb(228, 226, 226));
+    width:100%;
+    height: 25%;
+    border-radius: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    padding: 0.7rem;
+}
+.css::after {
+    content:"";
+    width:100%;
+    height: 100%;
+    background: rgb(236, 236, 236);
+    position: absolute;
+    left: 50%;
+}
+.js {
+    background: linear-gradient(to right top,#5d6d7c, rgb(228, 226, 226));
+    width:100%;
+    height: 25%;
+    border-radius: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    padding: 0.7rem;
+}
+.js::after {
+    content:"";
+    width:100%;
+    height: 100%;
+    background: rgb(236, 236, 236);
+    position: absolute;
+    left: 30%;
+}
