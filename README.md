@@ -1,2 +1,1 @@
-First Practice
-Dashboard
+A glass inspired dashboard project
